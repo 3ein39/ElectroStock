@@ -4,11 +4,24 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+require('dotenv').config();
 
 const index = require('./routes/index');
 const users = require('./routes/users');
 
 const app = express();
+
+const databaseURL = `mongodb+srv://3ein39:${process.env.MONGODB_PASSWORD}@cluster0.iobps84.mongodb.net/?retryWrites=true&w=majority`
+// connect to mongodb cluster using string connection
+mongoose.connect(databaseURL, { useNewUrlParser: true });
+
+
+// Check connection
+mongoose.connection.on('connected', () => {
+    console.log('Connected to database');
+}
+);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
