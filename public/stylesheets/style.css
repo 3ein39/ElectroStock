@@ -20,3 +20,8 @@ a:hover {
   text-decoration: none; /* Disable underline on card anchor */
 }
 
+/* CSS to set a fixed height for card images */
+.card-img-top {
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the fixed height */
+}
