@@ -11,12 +11,12 @@ const categories = [
        {
             name: 'Laptop',
             description: 'Laptop description',
-            image: 'https://images.unsplash.com/photo-1511556820780-d912e42b498a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80'
+            image: 'https://plus.unsplash.com/premium_photo-1670274609267-202ec99f8620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80'
         },
         {
             name: 'Phone',
             description: 'Phone description',
-            image: 'https://images.unsplash.com/photo-1511556820780-d912e42b498a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80'
+            image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80'
         }
 ];
 
@@ -40,7 +40,7 @@ async function createItems() {
         {
             name: 'Macbook Pro',
             description: 'Macbook Pro description',
-            image: 'https://images.unsplash.com/photo-1511556820780-d912e42b498a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+            image: 'https://plus.unsplash.com/premium_photo-1670274609267-202ec99f8620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80',
             price: 50,
             category: categories[0],
             manufacturer: 'Apple',
@@ -49,7 +49,7 @@ async function createItems() {
         {
             name: 'iPhone 12',
             description: 'iPhone 12 description',
-            image: 'https://images.unsplash.com/photo-1511556820780-d912e42b498a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+            image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80',
             price: 50,
             category: categories[1],
             manufacturer: 'Apple',
