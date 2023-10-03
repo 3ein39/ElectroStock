@@ -9,6 +9,7 @@ require('dotenv').config();
 
 const index = require('./routes/index');
 const users = require('./routes/users');
+const category = require('./routes/category');
 
 const app = express();
 
@@ -37,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-
+app.use('/categories', category);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   const err = new Error('Not Found');
