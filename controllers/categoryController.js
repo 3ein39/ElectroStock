@@ -9,3 +9,15 @@ exports.get_all_categories = async (req, res, next) => {
         next(err);
     }
 }
+
+exports.get_category = async (req, res, next) => {
+    try {
+        const category = await Category.findById(req.params.id);
+        const items = await Item.find({ category: req.params.id });
+        res.render('category_items', { category, items , title : category.name});
+    }
+    catch (e)
+    {
+        next(e);
+    }
+}
